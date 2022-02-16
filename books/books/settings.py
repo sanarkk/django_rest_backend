@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-f-*0b31rj241(op098&^!b#9aapj!-op+%&1p*7+5nz**w1pbe'
+SECRET_KEY = 'KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'books.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'books_db',
-        'USER': 'books_user',
-        'PASSWORD': 'sashatop2003',
+        'NAME': 'DB_NAME',
+        'USER': 'DB_USER',
+        'PASSWORD': 'PASSWORD',
         'HOST': 'localhost',
         'PORT': '',
     }
@@ -146,5 +146,5 @@ REST_FRAMEWORK = {
 
 SOCIAL_AUTH_POSTGRES_JSONFIELD = True
 
-SOCIAL_AUTH_GITHUB_KEY = 'b5a79ee779f19b04f6db'
-SOCIAL_AUTH_GITHUB_SECRET = 'ae99c80809a8cad89b81d73c58dd57a52b5ac3dd'
+SOCIAL_AUTH_GITHUB_KEY = 'TOKEN'
+SOCIAL_AUTH_GITHUB_SECRET = 'TOKEN'
